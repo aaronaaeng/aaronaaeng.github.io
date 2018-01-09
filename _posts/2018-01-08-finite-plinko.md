@@ -41,7 +41,7 @@ graph(easy_plinko(10000))
 
 Now this looks exactly like the distribution for a binomial random variable.  This makes sense, too.  Each time the disc reaches a peg can be thought of as an individual trial.  For each trial, there is the probability $$p=.5$$ that the disc moves to the right.  The final location is the sum of successful moves to the right.  Now this sounds exactly like a Binomial random variable.  Every successful trial represents a move to the right.  Every failure is a move to the left.  The number of trials is simply the number of peg rows that the disc encounters.  Therefore, the given image can be represented as samples from the random variable: $$X \text{ ~ } Bin(6, 0.5)$$
 
-From here, the problem only gets more interesting.  Solving for a single pyramid is fun and all but it lacks something that the actual plinko board has: boundaries.
+From here, the problem only gets more interesting.  Solving for a single pyramid is fun and all but it lacks something that the actual Plinko board has: boundaries.
 
 Boundaries provide the exciting (and confusing) part of the problem.  The idea of a boundary can be seen below:
 
@@ -83,7 +83,7 @@ I'd mock this up for the other problems but it would take far too long.  It also
 
 This strategy presents a problem where you must translate the individual Plinko's buckets to the real ones.  The _true_ board has different buckets than any individual problem.  You can see this while trying to determine what the left-most bucket should be labeled.  In the eyes of the subproblem, it is bucket 6.  However, in the eyes of the overall problem, it is bucket 0.  For the subproblem that begins on the next peg to the right, that same left-most bucket could be considered either bucket 5 or bucket 0.
 
-Managing this difference becomes incredibly annoying to both manimpulate and describe.  Luckly, there is a better way of solving these problems.  Instead of treating this complex problem as the sum of the realizations from 8 bounded random variables, we can instead think of it as a single markov chain.
+Managing this difference becomes increasingly difficult to both manipulate and describe.  Luckly, there is a better way of solving these problems.  Instead of treating this complex problem as the sum of the realizations from 8 bounded random variables, we can instead think of it as a single markov chain.
 
 That's where it really gets exciting.
 
