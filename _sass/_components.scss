@@ -9,8 +9,14 @@ pre {
     overflow-x: auto;
 }
 
+.center-image
+{
+    margin: 0 auto;
+    display: block;
+}
+
 code {
-    color: $color-code;
+    color: $black;
     font-size: $body-font-size;
     padding: 1px 4px;
 }
