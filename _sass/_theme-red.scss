@@ -1,19 +1,18 @@
 // Default black theme
 
 // Color variables
-$black: #181818;
-$red: #E74727;
-$red-dark: #DC3918;
-$white: #fff;
+$red: #FA554E;
+$black: #22252F;
+$white: #E3EAEE;
 
 // Config
-$color-background: $red !default;
-$color-dot-accent: $black !default;
-$color-foreground: $black !default;
-$color-title: $white !default;
+$color-background: $black !default;
+$color-dot-accent: $white !default;
+$color-foreground: $white !default;
+$color-title: $red !default;
 $color-body-text: $black !default;
-$color-text-accent: $red-dark !default;
-$color-code: $red-dark !default;
+$color-text-accent: $red !default;
+$color-code: $red !default;
 $color-nav-link: $white !default;
 $color-primary-link: $red !default;
 
